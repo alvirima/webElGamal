@@ -8,32 +8,21 @@ Website ini menyediakan:
 
 ---
 
-## 📂 Struktur Project
-
-WebKriptografiElgamal/
-│─ app.py # File utama Flask
-│─ static/
-│ └─ style.css # Style CSS untuk tampilan web
-│─ templates/
-│ ├─ enkripsi.html # Template halaman Enkripsi
-│ └─ dekripsi.html # Template halaman Dekripsi
-│─ README.md # Penjelasan project (ini file)
-
-
----
-
 ## 💻 Cara Menjalankan
 
 1. **Pastikan Python 3.x sudah terinstal**  
 2. Install dependencies:
 ```bash
 pip install flask
+
 3. Jalankan aplikasi:
 ```bash
 python app.py
+
 4. Buka browser, akses:
 ```bash
 http://127.0.0.1:5000
+
 5. Gunakan menu navigasi:
 
 Enkripsi → Masukkan p, g, private_x, dan plaintext

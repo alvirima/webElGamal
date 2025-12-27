@@ -16,3 +16,23 @@ Website ini menyediakan:
 pip install flask
 
 
+3. Jalankan aplikasi:
+```bash
+python app.py
+
+4. Buka browser, akses:
+```bash
+http://127.0.0.1:5000
+
+5. Gunakan menu navigasi:
+
+Enkripsi → Masukkan p, g, private_x, dan plaintext
+
+Dekripsi → Masukkan p, private_x, dan ciphertext
+
+
+📌 Catatan
+
+Pastikan bilangan p yang dimasukkan adalah prima (> 107) agar algoritma ElGamal bekerja dengan benar.
+
+Private key x harus lebih kecil dari p.

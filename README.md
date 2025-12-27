@@ -14,16 +14,15 @@ Website ini menyediakan:
 2. Install dependencies:
 ```bash
 pip install flask
-
-
+```
 3. Jalankan aplikasi:
 ```bash
 python app.py
-
+```
 4. Buka browser, akses:
 ```bash
 http://127.0.0.1:5000
-
+```
 5. Gunakan menu navigasi:
 
 Enkripsi → Masukkan p, g, private_x, dan plaintext

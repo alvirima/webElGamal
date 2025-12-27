@@ -11,23 +11,18 @@ Website ini menyediakan:
 ## 💻 Cara Menjalankan
 
 1. **Pastikan Python 3.x sudah terinstal**  
-2. Install dependencies:
+2. **Install dependencies:**
 ```bash
 pip install flask
 ```
-3. Jalankan aplikasi:
+3. **Jalankan aplikasi:**
 ```bash
 python app.py
 ```
-4. Buka browser, akses:
+4. **Buka browser, akses:**
 ```bash
 http://127.0.0.1:5000
 ```
-5. Gunakan menu navigasi:
-
-Enkripsi → Masukkan p, g, private_x, dan plaintext
-
-Dekripsi → Masukkan p, private_x, dan ciphertext
 
 
 📌 Catatan

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dekripsi ElGamal</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a
+          href="/"
+          class="nav-link {% if active_page == 'enkripsi' %}active{% endif %}"
+          >Enkripsi</a
+        >
+        <a
+          href="/dekripsi"
+          class="nav-link {% if active_page == 'dekripsi' %}active{% endif %}"
+          >Dekripsi</a
+        >
+      </nav>
+
+      <h1>Dekripsi ElGamal</h1>
+
+      {% with messages = get_flashed_messages() %} {% if messages %} {% for msg
+      in messages %}
+      <div class="result">{{ msg }}</div>
+      {% endfor %} {% endif %} {% endwith %}
+
+      <form method="POST">
+        <div class="section">
+          <h2>Input Key Dekripsi</h2>
+          <label>p (bilangan prima):</label>
+          <input type="number" name="p" value="{{ p }}" required />
+
+          <label>Private Key (x):</label>
+          <input
+            type="number"
+            name="private_x"
+            value="{{ private_x }}"
+            required
+          />
+        </div>
+
+        <div class="section">
+          <label>Ciphertext:</label>
+          <textarea name="ciphertext" rows="8" style="width: 100%">
+{{ ciphertext }}</textarea
+          >
+        </div>
+
+        <div style="text-align: center">
+          <button type="submit">Dekripsi</button>
+        </div>
+      </form>
+
+      {% if table %}
+      <div class="section">
+        <h2>Proses Dekripsi</h2>
+        <table>
+          <tr>
+            <th>No</th>
+            <th>c1</th>
+            <th>c2</th>
+            <th>s</th>
+            <th>s_inv</th>
+            <th>m</th>
+            <th>Chr</th>
+          </tr>
+          {% for row in table %}
+          <tr>
+            <td>{{ row.no }}</td>
+            <td>{{ row.c1 }}</td>
+            <td>{{ row.c2 }}</td>
+            <td>{{ row.s }}</td>
+            <td>{{ row.s_inv }}</td>
+            <td>{{ row.m }}</td>
+            <td>{{ row.chr }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+
+        <label>Hasil Plaintext:</label>
+        <textarea rows="6" style="width: 100%" readonly>
+{{ plaintext }}</textarea
+        >
+      </div>
+      {% endif %}
+    </div>
+  </body>
+</html>

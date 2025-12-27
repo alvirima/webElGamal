@@ -1,0 +1,140 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2afbc;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  overflow-x: hidden;
+  width: 100%;
+}
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+  padding: 15px 0;
+  background-color: #fff;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f4afc2ff;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+  padding: 8px 12px;
+  transition: color 0.2s ease;
+}
+
+.nav-link.active {
+  color: #9e182b;
+  font-weight: 700;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #9e182b;
+  border-radius: 2px;
+}
+
+h1 {
+  text-align: center;
+  color: #9e182b;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #d56989;
+}
+.section {
+  margin: 30px 0;
+  padding: 20px;
+  background: #fff0f5;
+  border-radius: 15px;
+  border: 2px solid #9e182b;
+}
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #ff80a1;
+}
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 95%;
+  padding: 10px;
+  border: 2px solid #9e182b;
+  border-radius: 10px;
+  font-size: 16px;
+}
+button {
+  background: #9e182b;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin: 10px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+button:hover {
+  background: #f9cdd5;
+  transform: scale(1.05);
+}
+.result {
+  background: #f1dfdd;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 2px solid #ffb6c1;
+}
+pre {
+  background: #f8f8ff;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-x: auto;
+  border: 1px solid #ffc0cb;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ff69b4;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+th,
+td {
+  border: 1px solid #ff80a1;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #ffb6c1;
+  color: #9e182b;
+}
+
+textarea {
+  width: 95% !important;
+  font-size: 16px;
+}
